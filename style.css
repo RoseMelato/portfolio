@@ -177,6 +177,7 @@ footer a{
   color: #403011;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
+
 }
 
 footer ul li a{
@@ -195,3 +196,5 @@ footer a i:hover{
   color: #8d6348;
 }
 footer ul{list-style: none;}
+
+footer .footer-btm{display: initial;}
