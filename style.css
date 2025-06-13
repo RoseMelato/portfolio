@@ -99,7 +99,7 @@ footer{
   background-color: #EFE0C2;
   color: #403011;
   margin-top: 10px;
-  text-align: center;
+  /*text-align: center;*/
   padding: 8px 0px;
   border-radius: 8px;
   width: 100%;
@@ -107,7 +107,13 @@ footer{
   box-sizing: border-box;
   position: relative;
   bottom: 0;
-
+  columns: 3;
+  
+}
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #403011;
 }
 footer a{text-decoration: none;
   color: #403011;
