@@ -150,7 +150,7 @@ h2 {font-family: 'Inter', sans-serif;
   color: whitesmoke;
 }
 
-.card{border: 1px solid #000;
+.card, .card{border: 1px solid #000;
 margin:20px;
 padding: 10px;
 background-color: #566905;
