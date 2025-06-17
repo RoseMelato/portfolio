@@ -11,32 +11,25 @@ body{
 }
 
 .header{
-  margin-top: 2px; 
+  min-height: 70px;
   background-color: #EFE0C2;
-  border-radius: 8px;
+  border-radius: 0 0 12px 12px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 8px 0px;
+  justify-content: center;
+  padding: 12px 4vw;
   width: 100%;
-  max-width: 100vw;
   box-sizing: border-box;
-}
-
-.header img{margin: 2px;}
-
-img{
-  max-width: 100%;
-  height: auto;
-  display: block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .header ul{
     list-style-type:none; 
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2px;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
   }
 
 .header ul li a{
@@ -45,10 +38,12 @@ img{
     font-family: fantasy; 
     letter-spacing: 0.5px; 
     font-size: 16px; 
-    padding: 6px 8px; 
-    margin: 10px;
+    padding: 8px 14px; 
+    border-radius: 4px;
+    transition:background 0.2s, color 0.2s;
+    
 }
-.header ul li a:hover{
+.header ul li a:hover, .header ul li a.active{
   cursor: pointer; 
   color: #aa866f;
   border-bottom: 2px solid #aa866f;
@@ -118,8 +113,9 @@ body h1 {
 .card3{
 border-radius: 8px;
 background-color: #EFE0C2;
-margin: 15px;
-padding:10px;
+margin: 18px;
+padding:16px;
+height: auto;
 }
 
 .content3 {
@@ -127,11 +123,18 @@ padding:10px;
   flex-direction: left;
   flex-wrap: wrap;
 }
+.content3 p{ font-size: 18px; margin: 10px;}
+.content3 h2 {
+  font-family: Montserrat;
+  color: #403011;
+  margin: 10px;
+  font-size: 24px;
+}
 .content3 a{text-decoration: none;
   color: #050505;
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  margin-top:3px;
+  font-size: 16px;
+  margin-top:5px;
 }
 .content3 a:hover {
   color: #8d6348;
@@ -164,6 +167,12 @@ padding:10px;
   min-width: 250px;
   margin: 10px;
 }
+
+.section-text p{
+font-family: Montserrat;
+margin: 8px;
+line-height: 1.5rem;
+font-size: 16px;}
 
 h2 {font-family: Montserrat;
   color: #403011;
@@ -263,7 +272,6 @@ footer ul li a.active {
   color: #fdf8f8;
   background: #8d6348;
   border-radius: 4px;
-  /*font-weight: bold;*/
   border-bottom: 2px solid #8d6348;
 }
 
@@ -290,14 +298,19 @@ footer ul li a.active {
   .header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 8px 2vw;
+    padding: 10px 2vw;
   }
   .header ul {
     flex-direction: column;
     width: 100%;
     gap: 0;
-    align-items: flex-start;
   }
+  .header ul li a{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 4px;
+}
   .header ul li {
     margin: 0;
     width: 100%;
