@@ -127,6 +127,18 @@ padding:16px;
 height: auto;
 }
 
+.content p a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px;
+}
+.content p a:hover{
+  color: #aa866f;
+  text-decoration: underline;
+}
+
 .content3 {
   display: left;
   flex-direction: left;
